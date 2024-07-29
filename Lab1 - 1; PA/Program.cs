@@ -37,4 +37,9 @@
         Price = newprice;
         Console.WriteLine($"El Producto {Name}, Ahora tiene un Precio de: {newprice}");
     }
+    //Función para Mostrar el Contenido
+    public void ShowContent()
+    {
+        Console.WriteLine($"Producto: {Name}, Precio: {Price}, Cantidad: {Quantity}");
+    }
 }
