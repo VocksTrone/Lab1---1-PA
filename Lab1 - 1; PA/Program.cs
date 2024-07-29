@@ -10,6 +10,7 @@
         Price = price;
         Quantity = quantity;
     }
+    //Función para Vender Productos
     public void Sell(int quantity)
     {
         if (Quantity >= quantity)
