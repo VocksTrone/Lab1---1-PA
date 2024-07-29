@@ -31,4 +31,10 @@
         Console.WriteLine($"Se Filleo el Stock de {Name} con {quantity} Productos");
         Console.WriteLine($"El Stock Final quedó con {Quantity}");
     }
+    //Función para Actualizar Precios
+    public void UpdatePrice(double newprice)
+    {
+        Price = newprice;
+        Console.WriteLine($"El Producto {Name}, Ahora tiene un Precio de: {newprice}");
+    }
 }
