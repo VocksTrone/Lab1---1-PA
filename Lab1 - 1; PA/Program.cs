@@ -73,5 +73,14 @@ public class OnlineStore
     {
         return productList.Find(p => p.Name == name);
     }
+    //Método para Mostrar los Productos Almacenados
+    public void ShowInventory()
+    {
+        Console.WriteLine("El Inventario de Productos es:");
+        foreach (Product product in productList)
+        {
+            product.ShowContent();
+        }
+    }
     
 }
