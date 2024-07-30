@@ -68,5 +68,10 @@ public class OnlineStore
             Console.WriteLine("Este Producto Ya Existe");
         }
     }
+    //Método para Consultar Productos usando la Función .Find
+    public Product ConsultProduct(string name)
+    {
+        return productList.Find(p => p.Name == name);
+    }
     
 }
