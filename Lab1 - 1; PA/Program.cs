@@ -43,3 +43,9 @@
         Console.WriteLine($"Producto: {Name}, Precio: {Price}, Cantidad: {Quantity}");
     }
 }
+
+//Clase de Tienda en línea 
+public class OnlineStore
+{
+   
+}
