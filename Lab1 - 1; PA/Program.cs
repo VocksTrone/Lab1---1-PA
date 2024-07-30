@@ -48,6 +48,25 @@
 public class OnlineStore
 {
    //Lista para Almacenar Productos 
-   public List<Product> productList = new List<Product>();
-   
+    public List<Product> productList = new List<Product>();
+    //Método para Añadir un Nuevo Producto y Revisar su Existencia
+    public void AddProduct(string name, double price, int quantity)
+    {
+        Console.WriteLine("Ingrese el Nombre del Producto");
+        Product nameProduct = productList.Find(p => p.Name == name);
+        if (nameProduct == null)
+        {
+            Console.WriteLine("Ingrese el Precio del Producto");
+            double priceProduct = double.Parse(Console.ReadLine());
+            Console.WriteLine("Ingrese el Stock del Producto");
+            int quantityProduct = int.Parse(Console.ReadLine());
+            Product newProduct = new Product(name, price, quantity);
+            productList.Add(newProduct);
+        }
+        else
+        {
+            Console.WriteLine("Este Producto Ya Existe");
+        }
+    }
+    
 }
