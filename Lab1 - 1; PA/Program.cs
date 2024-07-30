@@ -82,5 +82,19 @@ public class OnlineStore
             product.ShowContent();
         }
     }
-    
+    //Método Inicial
+    public static void Main(string[] args)
+    {
+        OnlineStore store = new OnlineStore();
+        store.AddProduct("Producto 1", 49.99, 25);
+        Product product = store.ConsultProduct("Producto 1");
+        if (product != null)
+        {
+            product.ShowContent();
+            product.Sell(10);
+            product.Restock(25);
+            product.UpdatePrice(64.99);
+        }
+        store.ShowInventory();
+    }
 }
