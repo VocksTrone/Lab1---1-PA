@@ -47,5 +47,7 @@
 //Clase de Tienda en línea 
 public class OnlineStore
 {
+   //Lista para Almacenar Productos 
+   public List<Product> productList = new List<Product>();
    
 }
